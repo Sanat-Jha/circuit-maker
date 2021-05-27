@@ -22,7 +22,8 @@
     background-image: url(navbg.jpg);
 }
 body{
-    background-image: url(bg.png);
+    background-image: url(https://media-public.canva.com/MADGyDCPzuc/4/screen_2x.jpg);
+    /* background-image: url(bg.png); */
     background-size: cover;
 }
 .labelInput{

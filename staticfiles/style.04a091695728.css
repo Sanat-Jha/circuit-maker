@@ -19,11 +19,11 @@
     font-size: 150%;
 }
 .navbar{
-    background-image: url(navbg.jpg);
+    background-image: url("navbg.f161907579e1.jpg");
 }
 body{
     background-image: url(https://media-public.canva.com/MADGyDCPzuc/4/screen_2x.jpg);
-    /* background-image: url(bg.png); */
+    /* background-image: url("bg.30fc29f06eca.png"); */
     background-size: cover;
 }
 .labelInput{
