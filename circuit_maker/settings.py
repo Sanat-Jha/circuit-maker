@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-brlmc$e9)1rx0md5&k6&+pt7h#l&#me2qjdib0%y)*nn_gh2=)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["circuit-maker-app.herokuapp.com","localhost",'0.0.0.0']
+ALLOWED_HOSTS = ["circuit-maker-app.herokuapp.com","localhost",'0.0.0.0',"*"]
 
 
 # Application definition
@@ -116,13 +116,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+
+  
+
+if DEBUG:
+
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+else:
+
+  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+  
 
 # STATIC_ROOT= os.path.join(BASE_DIR,'static')
 # Default primary key field type
