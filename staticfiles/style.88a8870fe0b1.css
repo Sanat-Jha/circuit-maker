@@ -1,0 +1,57 @@
+{% load static %}
+.select{
+    width: 70%;
+    margin-bottom: 0.5%;
+}
+.circuitarea{
+    border: solid black 2px;
+    width: 500px;
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 5%;
+    height:500px;
+    margin-left: 5%;
+    background-color: white;
+}
+.narbartext{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    font-size: 150%;
+}
+.navbar{
+    background-image: url("navbg.f161907579e1.jpg");
+}
+body{
+    background-image: url("bg.30fc29f06eca.png");
+    background-size: cover;
+}
+.labelInput{
+    width: 70%;
+}
+.halfPage{
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 40%;
+    display: inline-block;
+}
+.alert{
+    width: 100%;
+    margin-top: 1%;
+}
+.removeButton{
+    float: right;
+}
+.badge{
+    padding: 2%;
+    margin-right: 3%;
+}
+canvas{
+    display: none;
+}
+#DownloadBtn{
+    float: right;
+    background-color: rgb(24, 201, 24);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.411) 2px 2px 2px 2px;
+    padding: 2%;
+}
