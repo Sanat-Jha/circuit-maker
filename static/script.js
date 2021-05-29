@@ -16,7 +16,7 @@ $.ajax({
     },
     success: function(result) {
         document.getElementsByClassName("circuitarea")[0].innerHTML = String(result["circuitsvg"]);
-        document.getElementsByClassName("circuitarea")[0].innerHTML += `<button onclick="download()" id="DownloadBtn">Download</button>`;
+        document.getElementsByClassName("circuitarea")[0].innerHTML += `<button onclick="download()" id="DownloadBtn">🠗</button>`;
     },
     error: function(result) {
         alert(error)

@@ -1,18 +1,6 @@
 {% load static %}
-.select{
-    width: 70%;
-    margin-bottom: 0.5%;
-}
-.circuitarea{
-    border: solid black 2px;
-    width: 500px;
-    display: inline-block;
-    vertical-align:top;
-    margin-top: 5%;
-    height:500px;
-    margin-left: 5%;
-    background-color: white;
-}
+
+
 .narbartext{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: auto;
@@ -26,13 +14,10 @@ body{
     /* background-image: url(bg.png); */
     background-size: cover;
 }
-.labelInput{
-    width: 70%;
-}
+
 .halfPage{
     margin-left: 2%;
     margin-top: 2%;
-    width: 40%;
     display: inline-block;
 }
 .alert{
@@ -55,4 +40,58 @@ canvas{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.411) 2px 2px 2px 2px;
     padding: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For Desktops: */
+    .select{
+        width: 70%;
+        margin-bottom: 0.5%;
+    }
+    .halfPage{
+        width: 40%;
+    }
+    .labelInput{
+        width:70%;
+    }
+    .circuitarea{
+        border: solid black 2px;
+        width: 500px;
+        display: inline-block;
+        vertical-align:top;
+        margin-top: 5%;
+        height:500px;
+        margin-left: 5%;
+        background-color: white;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .select{
+        width: 80%;
+        margin-bottom: 0.5%;
+        margin: auto;
+    }
+    .halfPage{
+        width: 100%;
+    }
+    .labelInput{
+        width:80%;
+        margin: auto;
+    }
+    .btn{
+        margin: auto;
+        display: block;
+        box-shadow: white 0px 0px 5px 2px;
+    }
+    .circuitarea{
+        border: solid black 2px;
+        width: 90%;
+        display: inline-block;
+        vertical-align:top;
+        margin-top: 5%;
+        height:50vh;
+        margin-left: 5%;
+        background-color: white;
+    }
 }
