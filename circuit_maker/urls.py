@@ -17,10 +17,9 @@ from django.urls import path
 from django.conf.urls import url
 
 from django.conf import settings
-
 from django.views.static import serve
 
-from . import views
+from . import views #importing views.py file
 urlpatterns = [
     path('', views.home, name='home'),
     path('getsvg', views.getsvg, name='get svg'),
