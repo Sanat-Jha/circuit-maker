@@ -71,4 +71,4 @@ def makecircuit(circuitlst):
                 d.add(ElementDict[i[0]].right().label(i[2]))
             if i[1] == "Auto":
                 d.add(ElementDict[i[0]].label(i[2]))
-    return d.draw(show=False)   #Keeping show as false.
+    return d.draw(show=False)   #Show is false so that the screen dont open in server system.
